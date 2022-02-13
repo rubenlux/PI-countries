@@ -1,0 +1,42 @@
+.countriesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  gap: 120px;
+  padding: 40px;
+  justify-content: center;
+}
+
+.titleContainer {
+  background: url(../images/porweb.jpg) no-repeat;
+  padding: 30px;
+}
+
+.title {
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.3em;
+  align-items: left;
+  text-align: left;
+  padding-left: 50px;
+  cursor: pointer;
+  display: block;
+}
+
+.title:hover {
+  color: #44add0;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectGap {
+  gap: 10px;
+}
+
+@media (max-width: 560px) {
+  .countriesGrid {
+    grid-template-columns: 100%;
+  }
+}
